@@ -1,0 +1,11 @@
+<span class="title">{{ taskObject.name }}</span>
+<div class="buttons" ng-init="isRunning = false; showStop = false; finished = false" ng-show="finished == false">
+    <button type="button" ng-show="isRunning == false" ng-click="startTiming(); isRunning = true; showStop = true" class="btn btn-primary btn-md">Start</button>
+    <button type="button" ng-show="isRunning == true" ng-click="pauseTiming(); isRunning = false;" class="btn btn-warning btn-md">Pause</button>
+    <button type="button" ng-show="showStop == true" ng-click="stopTiming(); finished = true" class="btn btn-danger btn-md">Stop</button>
+    <br><br>
+    {{ taskObject.milliseconds | date: 'HH:mm:ss' }}
+</div>
+<div ng-show="finished == true">
+	total time spent: {{ taskObject.totalTime | date: 'HH:mm:ss' }}
+</div>

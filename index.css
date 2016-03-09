@@ -1,0 +1,38 @@
+nav {
+    text-align: center;
+    margin-top: 50px;
+}
+
+form {
+    font-size: 20px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.title {
+    display: block;
+    padding: 20px;
+    font-weight: bold;
+}
+
+button {
+    font-size: 20px;
+}
+
+input {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 2px solid gray;
+}
+
+.tasks {
+    text-align: center;
+    margin: 50px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.buttons {
+    padding: 20px;
+}
